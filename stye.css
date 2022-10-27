@@ -1,0 +1,107 @@
+main, nav, header, article, section, footer{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.nagykep>img, .kep img{
+    width: 100%;
+}
+
+.kiskep{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav>ul {
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 75% auto;
+    background-color: rgb(160, 151, 151);
+    padding: 0px;
+    margin: 0px;
+}
+
+nav>ul.kezdolap{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: red;
+    list-style-type: none;
+    margin: 3px;
+    width: 110px;
+    height: 20px;
+}
+nav>ul.opcio{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    margin: 3px;
+    width: 110px;
+    height: 20px;
+
+}
+
+nav>ul.opcio>li{
+    border-left: 1px solid black;
+    text-align: center;
+}
+.kezdolap a:link {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    list-style-type:none;
+  }
+
+  .opcio a:link{
+    text-decoration: none;
+
+    color: rgb(196, 23, 23);
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    color: hotpink;
+  }
+  
+  a:active {
+    color: blue;
+  }
+
+@media screen and (max-width:800px){
+    .kiskep{
+        grid-template-columns: 1fr;
+    }
+    
+    nav>ul {
+        grid-template-columns: auto;
+        
+    }
+    
+    nav {
+        grid-template-columns:auto;
+    }
+    nav>ul.kezdolap{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: red;
+        list-style-type: none;
+        margin: 3px;
+        width: 110px;
+        height: 20px;
+    }
+    nav>ul.opcio{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        list-style-type: none;
+        margin: 3px;
+        width: 110px;
+        height: 20px;
+    
+    }
+}
