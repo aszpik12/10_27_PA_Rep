@@ -3,13 +3,25 @@ main, nav, header, article, section, footer{
     padding: 10px;
 }
 
+main{
+    width: 50%;
+    margin: auto;
+}
+
 .nagykep>img, .kep img{
     width: 100%;
+}
+
+.kep{
+    margin: 1px;
+    border: 1px solid black;
 }
 
 .kiskep{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    
 }
 
 nav>ul {
@@ -19,7 +31,7 @@ nav>ul {
 
 nav {
     display: grid;
-    grid-template-columns: 75% auto;
+    grid-template-columns: auto auto;
     background-color: rgb(160, 151, 151);
     padding: 0px;
     margin: 0px;
